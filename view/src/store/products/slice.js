@@ -20,7 +20,6 @@ export const fetchProducts = createAsyncThunk(
             console.log(e.message);
             throw e
         }     
-
     }
 );
 
@@ -33,7 +32,6 @@ export const fetchProduct = createAsyncThunk(
             if(!result) {
                 throw new Error
             }
-
             return {
                 product: result
             }
@@ -49,6 +47,7 @@ export const fetchProduct = createAsyncThunk(
 const productsSlice = createSlice({
     name: "products",
     initialState: {
+        product: [],
         products: [],
         isLoading: false,
         loadError: false,
@@ -69,7 +68,7 @@ const productsSlice = createSlice({
         })
         .addCase(fetchProduct.fulfilled, (state, action) => {
             const { product } = action.payload;
-            Object.assign(state, { products: product });
+            Object.assign(state, { product: product });
             state.loadError = false;
             state.productsAreLoaded = true;
         })

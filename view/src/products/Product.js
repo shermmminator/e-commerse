@@ -52,7 +52,7 @@ function Product({ element, isLoggedIn, localUser }) {
                     <div className="product-img-holder">
                         <img 
                         className="product-picture"
-                        src={element.name === "Shuriken Shotgun" ? img2 : img1}
+                        src={element.name === "Krogan Shotgun" ? img2 : img1}
                         />
                         
                     </div>

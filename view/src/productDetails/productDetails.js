@@ -11,12 +11,10 @@ import { TextField, MenuItem } from "@mui/material";
 import { insertCartItem } from "../api/cartItems";
 import { img1, img2 } from "../utils/img";
 
-function ProductDetails({ isLoggedIn, localUser }) {
+function ProductDetails({ isLoggedIn, localUser, localProduct }) {
     
     const navigate = useNavigate();
     const dispatch = useDispatch();
-    const { products, productsAreLoaded } = useSelector(state => state.products);
-    const [productObj, setProductObj] = useState([]);
     const [qty, setQty] = useState(0);
     const { productId } = useParams();
 
@@ -54,39 +52,28 @@ function ProductDetails({ isLoggedIn, localUser }) {
     }
 
     useEffect(() => {
-
-        setProductObj(products);
-        // console.log(productObj);
-        
-    }, [dispatch, productObj, productsAreLoaded]);
-
-    useEffect(() => {
         async function loadProduct() {
-
             try {
                 await dispatch(fetchProduct(productId));
-
 
             } catch(e) {
                 console.log(e.message);
                 console.log("Error in the loadProduct funcitn within useEffect");
-
             }
         };
 
         loadProduct();
-
     }, []);
 
     return (
         <div className="product-details-container">
             <div className="product-details-inner-container">
                 
-                {productObj.length > 0 && (
+                {localProduct.length > 0 && (
                     <div className="product-details-holder">
                         <div className="product-image-holder">
                             <img 
-                            src={productObj[0].name === "Krogan Shotgun" ? img2 : img1}
+                            src={localProduct[0].name === "Krogan Shotgun" ? img2 : img1}
                             style={{
                                 width: "100%",
                                 borderRadius: "10px"
@@ -95,12 +82,12 @@ function ProductDetails({ isLoggedIn, localUser }) {
                         </div>    
                         <div className="product-text-holder">
                             <div className="product-title-holder">
-                                <h2>{productObj[0].name}</h2>
-                                <h4>{`${productObj[0].price}$`}</h4>
+                                <h2>{localProduct[0].name}</h2>
+                                <h4>{`${localProduct[0].price}$`}</h4>
                             </div>
 
                             <div className="product-description-holder">
-                                <p>{productObj[0].description}</p>
+                                <p>{localProduct[0].description}</p>
                             </div>
 
                             <div className="execute-order-holder">
@@ -120,14 +107,10 @@ function ProductDetails({ isLoggedIn, localUser }) {
                                     ))}
                                 </TextField>
                                 <Button variant="contained" onClick={handlePlaceInCart}>ADD TO CART</Button>
-
                             </div>
-
                         </div>
                     </div>
-                    
                 )}
-               
             </div>
         </div>
     )
