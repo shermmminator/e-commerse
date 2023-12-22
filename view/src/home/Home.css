@@ -1,0 +1,17 @@
+.home-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid blue; */
+    height: auto;
+}
+
+.home-inner-container {
+    width: 75%;
+    /* border: 2px solid green; */
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}

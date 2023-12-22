@@ -1,0 +1,24 @@
+.orderitem-container {
+    border-radius: 10px;
+    background-color: lightgrey;
+    /* border: 1px solid green; */
+    display: flex;
+    margin: 0.5vw 0vw 0 0vw;
+
+}
+
+.orderitem-name-holder,
+.orderitem-qty-holder,
+.orderitem-price-holder {
+    width: 33.3%;
+    height: 5vw;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#order-detail-text {
+    font-size: 1vw;
+
+}

@@ -1,0 +1,145 @@
+.profile-container {
+    width: 100%;
+    height: auto;
+    /* border: 3px solid yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-inner-container {
+    height: 45vw;
+    width: 100%;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-holder .profile-specs-container,
+.profile-holder .password-edit-container {
+    height: 50%;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: space-between;
+    justify-content: center;
+    
+}
+
+.profile-holder {
+    width: 30vw;
+    height: 30vw;
+    margin-top: 0vw;
+        /* border: 1px solid brown; */
+    border-radius: 10px;
+    /* box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.user-fullname {
+    font-size: 1.5vw;
+}
+
+.profile-holder .password-edit-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logout-button {
+    height: 2.6vw;
+    width: 6vw;
+    font-size: 0.8vw;
+}
+
+#change-pass-button {
+    height: 3vw;
+    width: 7vw;
+    font-size: 0.6vw;
+}
+
+#user-icon {
+    color: grey;
+    font-size: 12vw;
+}
+
+.profile-holder .profile-image-container {
+    /* border: 3px solid blue; */
+    height: 15vw;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.password-edit-holder {
+    height: 11vw;
+    width: 13vw;
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.password-edit-inner-container {
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.password-edit-holder #password-input {
+    /* border: 1px solid red; */
+    height: 1vw;
+}
+
+.logout-button-container {
+    /* border: 2px solid blue;  */
+    width: 100%;
+    min-height: 3vw;
+    display: flex;
+    justify-content: center;
+}
+
+/*Order history section*/
+
+.order-history-container {
+    /* border: 2px solid red; */
+    display: flex;
+    height: auto;
+    justify-content: center;
+}
+
+.order-history-holder {
+    /* border: 4px solid yellow; */
+    height: auto;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order-history-title-container  {
+    border-bottom: 2px solid black;
+    display: flex;
+    width: 70%; 
+    height: 4vw;
+    
+}
+
+.order-history-items {
+    /* border: 2px solid red; */
+    width: 70%;
+    margin-top: 2vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}

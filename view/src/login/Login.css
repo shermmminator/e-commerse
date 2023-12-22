@@ -1,0 +1,107 @@
+.login-container {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container-inner {
+    /* border: 1px solid blue; */
+    height: 40vw;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-holder {
+    /* border: 1px solid yellow; */
+    width: 30vw;
+    height: 25vw;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.login-holder h1 {
+    margin-left: 0.5vw;
+}
+
+.input-holder {
+    /* border: 2px solid brown; */
+    height: 75%;
+}
+
+.input-holder-inner,
+.submit-holder  {
+    /* border: 1px solid red; */
+    height: 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-holder-inner {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+
+.input-holder-inner label {
+    margin-bottom: 0.5vw;
+    margin-left: 0.5vw
+}
+
+.input {
+    height: 1.8vw;
+    width: 65%;
+    font-size: 0.8vw;
+    margin-left: 0.5vw;
+    border-radius: 5px;
+    outline: white;
+    border: 1px solid grey
+}
+
+.input:focus {
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    border: 1px solid grey;
+    outline: white;
+}
+
+.submit-holder {
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid blue;*/
+    align-items: center;
+}
+
+.submit-holder button {
+    height: 2vw;
+    width: 5vw;
+    border-radius: 3px;
+    outline: darkgrey;
+    border: 1px solid darkgrey;
+}
+
+.submit-holder button:hover {
+    background-color: darkgrey;
+    outline: darkgrey;
+    border: 1px solid darkgrey;
+    cursor: pointer;
+}
+
+.input-holder #outlined-basic {
+    /* border: 1px solid red; */
+    width: 15vw;
+}
+
+#login-button {
+    height: 2.6vw;
+    width: 5vw;
+    font-size: 0.8vw;
+}
+
+.notify-text {
+    text-align: center;
+}

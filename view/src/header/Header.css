@@ -1,0 +1,19 @@
+.logged-out-tags {
+    color: white;
+    text-decoration: none;
+}
+
+.logged-in-tags {
+    color: white;
+    text-decoration: none;
+}
+
+#header-container {
+    background-color: black;
+}
+
+.homepage-link {
+    text-decoration: none;
+    color: white;
+}
+
