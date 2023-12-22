@@ -60,7 +60,7 @@ function CartItem({ cartItem, localUser }) {
                     </Typography>
                     <img 
                     className="orderitem-image"
-                    src={name === "Shuriken Shotgun" ? img2 : img1}
+                    src={name === "Krogan Shotgun" ? img2 : img1}
                     style={{
                         width: "4vw",
                         height: "2vw",
